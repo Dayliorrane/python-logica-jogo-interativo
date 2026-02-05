@@ -1,11 +1,15 @@
 print('Você é um explorador corajoso, que se aventura pela floresta sussurante.')
-print('Acredite no seu potêncial, e encontre todos os tesouros lendários e segredos perdidos!')
+print('Acredite no seu potencial, e encontre todos os tesouros lendários e segredos perdidos!')
 print('Vamos lá! Conquiste a melhor pontuação!\n')
 
-print('Olha só! Existem três caminhos dintintos.')
+print('Olha só! Existem três caminhos distintos.\n')
 
 while True:
     decisao = int(input('Qual caminho você vai escolher? 1, 2 ou 3? '))
+
+    if decisao not in [1,2,3]:
+        print(f'Opção Inválida! Você digitou {decisao}. Escolha 1, 2 ou 3 para continuar.')
+        continue
 
     if decisao == 1:
         print('Você entrou no caminho das sombras. ')
@@ -15,20 +19,18 @@ while True:
         print('-- Resolva meu enigma! Se quiser passar por mim. Diz a criatura, com cara de poucos amigos...\n')
 
         print('Atenção! Digite sua reposta em letras minúsculas.\n')
-        resp_enigma = str(input('Quem sou eu? Tenho olhos, mas não vejo. Tenho boca, mas não falo. O qeu sou? '))
+        resp_enigma = str(input('Quem sou eu? Tenho olhos, mas não vejo. Tenho boca, mas não falo. O que sou? '))
         if resp_enigma == 'uma caveira':
             print(' ')
-            print('Resposta correta! Parabéns! ')
-            print('Você acaba de encontrar um baú escondido contendo uma gema preciosa que vale 100 pontos. \n')
-            print('Fim')
+            print('Resposta correta! Parabéns!')
+            print('\nVocê acaba de encontrar um baú escondido contendo uma gema preciosa que vale 100 pontos. \n')
             break
         else:
             print(' ')
             print('Resposta incorreta!')
-            print('Infelizmente você não encontrou os tesouros lendários e segredos perdidos da floresta sussurante.\n')
+            print('\nInfelizmente você não encontrou os tesouros lendários e segredos perdidos da floresta sussurante.\n')
             print('Tente novamente')
             break
-
 
     elif decisao == 2:
         print(' ')
@@ -43,13 +45,12 @@ while True:
         resp_enigma = input('O que você vai fazer? ')
         if resp_enigma == 'atravessar':
             print(' ')
-            print('Resposta Correta. Parabéns! Você acaba de encontrar uma fonte mágica que restaura sua saúde e adiciona 50 pontos à sua pontuação. \n')
-            print('Fim')
+            print('Resposta Correta. Parabéns! \nVocê acaba de encontrar uma fonte mágica que restaura sua saúde e adiciona 50 pontos à sua pontuação. \n')
             break
         else:
             print(' ')
             print('Resposta incorreta!')
-            print('Infelizmente você não encontrou os tesouros lendários e segredos perdidos da floresta sussurante. \n')
+            print('\nInfelizmente você não encontrou os tesouros lendários e segredos perdidos da floresta sussurante. \n')
             print('Tente novamente')
             break
 
@@ -67,13 +68,12 @@ while True:
         print(' ')
         if resp_enigma == 'contornar':
             print('Resposta correta! Parabéns! Você encontrou a árvore encantada.')
-            print('Ela te concede uma habilidade especial de camuflagem, adicionando 75 pontos a sua pontuação. \n')
-            print('Fim')
+            print('\nEla te concede uma habilidade especial de camuflagem, adicionando 75 pontos a sua pontuação. \n')
             break
         else:
             print(' ')
             print('Resposta incorreta!')
-            print('Infelizmente você não encontrou os tesouros lendários e segredos perdidos da floresta sussurante. \n')
+            print('\nInfelizmente você não encontrou os tesouros lendários e segredos perdidos da floresta sussurante. \n')
             print('Tente novamente')
             break
 
