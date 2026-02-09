@@ -1,7 +1,7 @@
 # Jogo de Aventura em Python 🐍🌲
 DESAFIO FLORESTA SUSSURRANTE
 
-Este projeto é um jogo de aventura em modo texto, desenvolvido em Python,
+Este projeto é um jogo de aventura em modo texto, desenvolvido inicialmente em portugol e reescrito na versão Python,
 com foco em prática de lógica de programação, estruturas condicionais e laços de repetição.
 
 ## 🎯 Objetivo
